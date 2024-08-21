@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: "Fleur De Leah", cursive;
+        font-weight: 400;
+        font-style: normal;
+        src: url('/assets/fonts/FleurdeLeah.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: "Jacques Francois", serif;
+      font-weight: 400;
+      font-style: normal;
+      src: url('/assets/fonts/JacquesFrancois.ttf') format('truetype');
+  }
+  }
+
+.text-stroke {
+
+    text-shadow: 
+      -1px -1px 0 #005651,  
+      1px -1px 0 #005651,
+      -1px 1px 0 #005651,
+      1px 1px 0 #005651;
+  }
+
+.hover-stroke {
+  transition: all 0.3s ease;
+}
+
+.hover-stroke:hover {
+    text-shadow: 0 0 2px #2dd4bf, /* define a cor do contorno aqui */
+                 0 0 2px #2dd4bf,
+                 0 0 2px #2dd4bf,
+                 0 0 2px #2dd4bf;
+    mix-blend-mode: difference; /* aplica o blend mode para destacar o contorno */
+}
+  /* #2dd4bf */
+
+.bg-home {
+  background-image: url('/violetbg.png');    
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  overflow: hidden; /* Para evitar rolagem indesejada */
+}
+
+.bg-filmes {
+  background-image: url('/bgFilmes.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  overflow: hidden; 
+}
+
+.bg-noticias {
+  background-color: #E7FFFE;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  overflow: hidden; 
+}
+
+.bg-sobre {
+  background-image: url('/bgSobre.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 120vh;
+  overflow: hidden; 
+}
+
+.bg-contato {
+  background-image: url('/bgContato.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 120vh;
+  overflow: hidden; 
+}
